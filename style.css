@@ -1,3 +1,4 @@
+/* RESET */
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +17,8 @@ li {
   color: white;
   font-family: "Arial";
 }
+
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +38,8 @@ header {
   color: white;
   margin: 0;
 }
+
+/* SUBTITLE */
 .content-title {
   color: mediumturquoise;
   margin-left: 2%;
@@ -44,6 +49,8 @@ header {
 #profile {
   margin-top: 0;
 }
+
+/* MENU */
 .menu-btn {
   font-size: 30px;
   color: white;
@@ -70,22 +77,26 @@ header {
 .opened {
   display: block;
 }
+
+/* CONTENT BOX */
 .container {
   background-color: royalblue;
   border-radius: 10px;
   margin: 0 2%;
   padding: 2%;
 }
+
+/* SKILLS SECTION */
 .skills-grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-rows: repeat(4, 50px);
 }
 .progress-bar {
   height: 30px;
   width: 100%;
   background-color: lightgrey;
-  border-radius: 50px;
+  border-radius: 25px;
   margin: auto;
 }
 .bar {
@@ -116,10 +127,14 @@ header {
   color: white;
   text-align: center;
 }
+
+/* SOCIAL SECTION */
 .social-link {
   text-decoration: none;
   color: lawngreen;
 }
+
+/* FOOTER */
 footer {
   color: white;
   text-align: center;
@@ -128,9 +143,14 @@ footer {
   padding: 5px 0;
   font-family: "Arial";
 }
+
+/* DESKTOP SETUP */
 @media only screen and (min-width: 768px){
-  p, li, .content-title {
+  .content-title {
     font-size: 2em;
+  }
+  p, li, a, footer {
+    font-size: 1.5em;
   }
   ul, ol {
     padding-left: 55px;
@@ -139,7 +159,10 @@ footer {
     line-height: 100px;
   }
   .title, .menu-btn {
-    font-size: 2em;
+    font-size: 60px;
+  }
+  .content-title {
+    scroll-margin-top: 100px;
   }
   .menu-content {
     text-align: center;
@@ -156,6 +179,21 @@ footer {
     border-radius: 25px;
   }
   .skills-grid {
-    width: 50%;
+    width: 75%;
+    grid-template-rows: repeat(4, 100px);
+  }
+  .skill-label {
+    line-height: 100px;
+    font-size: 2rem;
+  }
+  .progress-bar {
+    height: 62.5px;
+    border-radius: 50px;
+  }
+  .bar {
+    height: 62.5px;
+    line-height: 62.5px;
+    font-size: 2rem;
+    border-radius: 50px 0 0 50px;
   }
 }
