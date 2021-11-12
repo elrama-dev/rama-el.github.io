@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: midnightblue;
-  font-size: 100%;
 }
 p {
   color: white;
@@ -46,7 +45,7 @@ header {
   margin-top: 0;
 }
 .menu-btn {
-  font-size: 25px;
+  font-size: 30px;
   color: white;
 }
 .menu-content {
@@ -130,14 +129,17 @@ footer {
   font-family: "Arial";
 }
 @media only screen and (min-width: 768px){
-  p, li {
-    font-size: 21px;
-  }
-  .content-title {
-    font-size: 34px;
+  p, li, .content-title {
+    font-size: 2em;
   }
   ul, ol {
     padding-left: 55px;
+  }
+  header, .title {
+    line-height: 100px;
+  }
+  .title, .menu-btn {
+    font-size: 2em;
   }
   .menu-content {
     text-align: center;
