@@ -1,17 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: silver;
+  background-color: midnightblue;
+  font-size: 100%;
 }
 p {
+  color: white;
   margin: 0 2%;
   font-family: "Arial";
 }
 ul, ol {
-  margin-top: 0;
+  margin: 0;
   padding-left: 25px;
 }
 li {
+  color: white;
   font-family: "Arial";
 }
 header {
@@ -34,6 +37,7 @@ header {
   margin: 0;
 }
 .content-title {
+  color: mediumturquoise;
   margin-left: 2%;
   margin-bottom: 0;
   scroll-margin-top: 50px;
@@ -51,7 +55,9 @@ header {
   z-index: 1;
   width: 100%;
   left: 0;
-  background-color: indigo;
+  background-color: teal;
+  border-radius: 0 0 0 40px;
+  box-shadow: 0 5px 15px black;
 }
 .menu-content a {
   text-transform: uppercase;
@@ -65,14 +71,16 @@ header {
 .opened {
   display: block;
 }
+.container {
+  background-color: royalblue;
+  border-radius: 10px;
+  margin: 0 2%;
+  padding: 2%;
+}
 .skills-grid {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 50px 50px 50px 50px;
-  background-color: mediumblue;
-  margin: 0 2%;
-  padding: 2%;
-  border-radius: 10px;
 }
 .progress-bar {
   height: 30px;
@@ -111,14 +119,23 @@ header {
 }
 .social-link {
   text-decoration: none;
+  color: lawngreen;
 }
 footer {
+  color: white;
   text-align: center;
-  background-color: orange;
-  margin-bottom: 2px;
-  font-family: "Verdana";
+  background-color: black;
+  margin: 5px 0;
+  padding: 5px 0;
+  font-family: "Arial";
 }
 @media only screen and (min-width: 768px){
+  p, li {
+    font-size: 21px;
+  }
+  .content-title {
+    font-size: 34px;
+  }
   ul, ol {
     padding-left: 55px;
   }
