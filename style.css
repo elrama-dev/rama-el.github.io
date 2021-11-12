@@ -150,6 +150,9 @@ footer {
     content: "/";
     margin: 0 20px;
   }
+  .container {
+    border-radius: 25px;
+  }
   .skills-grid {
     width: 50%;
   }

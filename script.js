@@ -14,6 +14,6 @@ function openMenu(){
 function toSection(id){
   var section = document.getElementById(id);
   openMenu();
-  section.style.color = "red";
-  setTimeout(function(){section.style.color = "black";}, 1000);
+  section.style.color = "lawngreen";
+  setTimeout(function(){section.style.color = "mediumturquoise";}, 1000);
 }
