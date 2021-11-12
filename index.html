@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Rama El Website</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">Rama El Website</h1>
+    <div class="menu">
+      <div class="menu-btn" onclick="openMenu()"><i class="fas fa-bars" id="menu-icon"></i></div>
+      <div class="menu-content">
+        <a href="#profile" onclick="toSection('profile')">Profile</a>
+        <a href="#about" onclick="toSection('about')">About</a>
+        <a href="#skills" onclick="toSection('skills')">Skills</a>
+        <a href="#top-project" onclick="toSection('top-project')">Top Project</a>
+        <a href="#social-media" onclick="toSection('social-media')">Social Media</a>
+      </div>
+    </div>
+  </header>
+  <h2 class="content-title" id="profile">Profile</h2>
+  <ul>
+    <li>Name: Rama</li>
+    <li>Age: 13</li>
+    <li>Hobby: Code, solve rubik</li>
+  </ul>
+  <h2 class="content-title" id="about">About</h2>
+  <p>Halo! Saya Rama, saya baru belajar coding dari awal tahun 2021. Awalnya saya mempelajari python. Dan sekarang saya sedang belajar untuk web development. Dalam mempelajari coding ini, saya hanya berbekal youtube dan browser. Saat coding, saya menggunakan aplikasi android seperti Acode (Web development), Pydroid3 (Python), dan Cxxdroid (C++).</p>
+  <h2 class="content-title" id="skills">Skills</h2>
+  <div class="skills-grid">
+    <p class="skill-label">Python</p>
+    <div class="progress-bar">
+      <div class="python bar">80%</div>
+    </div>
+    <p class="skill-label">JavaScript</p>
+    <div class="progress-bar">
+      <div class="js bar">50%</div>
+    </div>
+    <p class="skill-label">CSS</p>
+    <div class="progress-bar">
+      <div class="css bar">45%</div>
+    </div>
+    <p class="skill-label">C++</p>
+    <div class="progress-bar">
+      <div class="cpp bar">30%</div>
+    </div>
+  </div>
+  <h2 class="content-title" id="top-project">Top Project</h2>
+  <p>( Belum ada untuk sementara )</p>
+  <h2 class="content-title" id="social-media">Social Media</h2>
+  <p>You can find me at:</p>
+  <ul>
+    <li>IG: <a class="social-link" href="https://instagram.com/rama120208">rama120208</a></li>
+    <li>Github: <a class="social-link" href="https://github.com/rama-el">rama-el</a></li>
+  </ul>
+  <footer>Copyright &copy; Rama El</footer>
+  <script src="script.js"></script>
+</body>
+</html>
