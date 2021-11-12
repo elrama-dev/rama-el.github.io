@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+}
+p {
+  margin: 0 2%;
+  font-family: "Arial";
+}
+ul, ol {
+  margin-top: 0;
+  padding-left: 25px;
+}
+li {
+  font-family: "Arial";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 0 3%;
+  box-sizing: border-box;
+}
+.title {
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+.content-title {
+  margin-left: 2%;
+  margin-bottom: 0;
+  scroll-margin-top: 50px;
+}
+#profile {
+  margin-top: 0;
+}
+.menu-btn {
+  font-size: 25px;
+  color: white;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  background-color: indigo;
+}
+.menu-content a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-family: "Arial";
+  text-align: center;
+  margin: 0;
+}
+.opened {
+  display: block;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50px 50px 50px 50px;
+  background-color: mediumblue;
+  margin: 0 2%;
+  padding: 2%;
+  border-radius: 10px;
+}
+.progress-bar {
+  height: 30px;
+  width: 100%;
+  background-color: lightgrey;
+  border-radius: 50px;
+  margin: auto;
+}
+.bar {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 25px 0 0 25px;
+  font-family: "Arial";
+}
+.python {
+  width: 80%;
+  background-color: yellow;
+}
+.js {
+  width: 50%;
+  background-color: red;
+}
+.css {
+  width: 45%;
+  background-color: mediumspringgreen;
+}
+.cpp {
+  width: 30%;
+  background-color: salmon;
+}
+.skill-label {
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
+.social-link {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background-color: orange;
+  margin-bottom: 2px;
+  font-family: "Verdana";
+}
+@media only screen and (min-width: 768px){
+  ul, ol {
+    padding-left: 55px;
+  }
+  .menu-content {
+    text-align: center;
+  }
+  .menu-content a {
+    display: inline;
+  }
+  .menu-content a::after {
+    content: "/";
+    margin: 0 20px;
+  }
+  .skills-grid {
+    width: 50%;
+  }
+}
