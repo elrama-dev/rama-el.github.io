@@ -184,7 +184,7 @@ footer {
   }
   .skill-label {
     line-height: 100px;
-    font-size: 48px;
+    font-size: 2rem;
   }
   .progress-bar {
     height: 62.5px;
@@ -193,7 +193,7 @@ footer {
   .bar {
     height: 62.5px;
     line-height: 62.5px;
-    font-size: 48px;
+    font-size: 2rem;
     border-radius: 50px 0 0 50px;
   }
 }
