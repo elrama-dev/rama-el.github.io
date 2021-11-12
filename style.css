@@ -156,10 +156,10 @@ footer {
     padding-left: 55px;
   }
   header, .title {
-    line-height: 100px;
+    line-height: 75px;
   }
   .title, .menu-btn {
-    font-size: 60px;
+    font-size: 45px;
   }
   .content-title {
     scroll-margin-top: 100px;
