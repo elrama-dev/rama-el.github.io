@@ -149,7 +149,7 @@ footer {
   .content-title {
     font-size: 32px;
   }
-  p, li, footer {
+  p, li, div, footer {
     font-size: 1.5em;
   }
   ul, ol {
@@ -182,15 +182,14 @@ footer {
   .skills-grid {
     width: 75%;
     grid-template-rows: repeat(4, 100px);
+    font-size: 1rem;
   }
   .skill-label {
     line-height: 100px;
-    font-size: 1rem;
   }
   .progress-bar {
     height: 62.5px;
     border-radius: 50px;
-    font-size: 1.5rem;
   }
   .bar {
     height: 62.5px;
